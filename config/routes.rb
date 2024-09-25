@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get ("/square_root/new"), {:controller => "square_root_calc", :action => "square_root_action"}
 
   get ("/square_root/results"), {:controller => "square_root_calc", :action => "square_root_result"}
+
+  get ("/payment/new"), {:controller => "payment_calc", :action => "payment_action"}
+
+  get ("/payment/results"), {:controller => "payment_calc", :action => "payment_result"}
 end
